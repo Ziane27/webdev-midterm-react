@@ -22,7 +22,7 @@ const CountryDetails = ({ country, onClick }) => {
       <p><strong>Population:</strong> {country.population.toLocaleString()}</p>
       <p><strong>Area:</strong> {country.area.toLocaleString()} km²</p>
       <p><strong>Coordinates:</strong> {coordinateText}</p>
-      <Borders borders={country.borders} onClick={onClick} /> {/* Pass onClick handler here */}
+      <Borders borders={country.borders} onClick={onClick} />
       <p><strong>Timezones:</strong> {country.timezones?.length ? country.timezones.join(', ') : 'N/A'}</p>
       <p><strong>Currencies:</strong> {country.currency ? Object.values(country.currency).join('') : 'N/A'}</p>
       <p><strong>Languages:</strong> {country.languages?.length ? country.languages.join(', ') : 'N/A'}</p>
